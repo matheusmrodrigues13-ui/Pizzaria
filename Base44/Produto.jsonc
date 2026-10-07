@@ -1,0 +1,79 @@
+{
+  "name": "Produto",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string",
+      "title": "Nome"
+    },
+    "descricao": {
+      "type": "string",
+      "title": "Descri\u00e7\u00e3o"
+    },
+    "ingredientes": {
+      "type": "string",
+      "title": "Ingredientes"
+    },
+    "categoria": {
+      "type": "string",
+      "enum": [
+        "pizza_salgada",
+        "pizza_doce",
+        "bebida",
+        "sobremesa",
+        "complemento"
+      ],
+      "title": "Categoria"
+    },
+    "imagem": {
+      "type": "string",
+      "title": "URL da imagem"
+    },
+    "preco_pequena": {
+      "type": "number",
+      "title": "Pre\u00e7o pequena"
+    },
+    "preco_media": {
+      "type": "number",
+      "title": "Pre\u00e7o m\u00e9dia"
+    },
+    "preco_grande": {
+      "type": "number",
+      "title": "Pre\u00e7o grande"
+    },
+    "preco": {
+      "type": "number",
+      "title": "Pre\u00e7o unit\u00e1rio (bebida/sobremesa/complemento)"
+    },
+    "tamanhos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Tamanhos dispon\u00edveis"
+    },
+    "ativo": {
+      "type": "boolean",
+      "default": true,
+      "title": "Ativo"
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false,
+      "title": "Popular"
+    },
+    "promocao": {
+      "type": "boolean",
+      "default": false,
+      "title": "Em promo\u00e7\u00e3o"
+    },
+    "promocao_texto": {
+      "type": "string",
+      "title": "Texto da promo\u00e7\u00e3o"
+    }
+  },
+  "required": [
+    "nome",
+    "categoria"
+  ]
+}

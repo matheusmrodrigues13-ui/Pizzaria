@@ -1,0 +1,31 @@
+{
+  "name": "Configuracao",
+  "type": "object",
+  "properties": {
+    "endereco": {
+      "type": "string",
+      "title": "Endere\u00e7o completo"
+    },
+    "telefone": {
+      "type": "string",
+      "title": "Telefone"
+    },
+    "whatsapp": {
+      "type": "string",
+      "title": "WhatsApp (DDI + DDD + n\u00famero)"
+    },
+    "instagram": {
+      "type": "string",
+      "title": "Instagram (URL ou @perfil)"
+    },
+    "facebook": {
+      "type": "string",
+      "title": "Facebook (URL)"
+    },
+    "horario": {
+      "type": "string",
+      "title": "Hor\u00e1rio de funcionamento"
+    }
+  },
+  "required": []
+}

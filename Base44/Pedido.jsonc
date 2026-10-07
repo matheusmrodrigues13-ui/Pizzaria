@@ -1,0 +1,91 @@
+{
+  "name": "Pedido",
+  "type": "object",
+  "properties": {
+    "numero": {
+      "type": "number",
+      "title": "N\u00famero do pedido"
+    },
+    "codigo": {
+      "type": "string",
+      "title": "C\u00f3digo \u00fanico do pedido"
+    },
+    "cliente_nome": {
+      "type": "string",
+      "title": "Nome do cliente"
+    },
+    "cliente_email": {
+      "type": "string",
+      "title": "Login do cliente"
+    },
+    "cliente_telefone": {
+      "type": "string",
+      "title": "Telefone"
+    },
+    "itens": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "title": "Itens do pedido"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "entrega",
+        "retirada"
+      ],
+      "title": "Tipo"
+    },
+    "endereco": {
+      "type": "object",
+      "title": "Endere\u00e7o de entrega"
+    },
+    "pagamento": {
+      "type": "string",
+      "title": "Forma de pagamento"
+    },
+    "subtotal": {
+      "type": "number",
+      "title": "Subtotal"
+    },
+    "taxa_entrega": {
+      "type": "number",
+      "title": "Taxa de entrega"
+    },
+    "desconto": {
+      "type": "number",
+      "title": "Desconto"
+    },
+    "total": {
+      "type": "number",
+      "title": "Total"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "recebido",
+        "confirmado",
+        "preparo",
+        "pronto",
+        "saiu_entrega",
+        "entregue",
+        "cancelado"
+      ],
+      "default": "recebido",
+      "title": "Status"
+    },
+    "observacoes": {
+      "type": "string",
+      "title": "Observa\u00e7\u00f5es"
+    },
+    "tempo_estimado": {
+      "type": "string",
+      "title": "Tempo estimado"
+    }
+  },
+  "required": [
+    "numero",
+    "cliente_nome"
+  ]
+}

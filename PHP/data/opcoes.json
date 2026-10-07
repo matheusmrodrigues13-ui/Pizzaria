@@ -1,0 +1,26 @@
+[
+  {
+    "bordas": [
+      { "nome": "Sem borda recheada", "preco": 0 },
+      { "nome": "Catupiry", "preco": 8 },
+      { "nome": "Cheddar", "preco": 8 },
+      { "nome": "Chocolate", "preco": 10 }
+    ],
+    "adicionais": [
+      { "nome": "Catupiry extra", "preco": 6 },
+      { "nome": "Cheddar extra", "preco": 6 },
+      { "nome": "Bacon extra", "preco": 5 },
+      { "nome": "Calabresa extra", "preco": 6 },
+      { "nome": "Queijo extra", "preco": 5 },
+      { "nome": "Molho especial", "preco": 3 }
+    ],
+    "bairros": [
+      { "nome": "Bela Vista", "taxa": 5 },
+      { "nome": "Centro", "taxa": 7 },
+      { "nome": "Jardim Europa", "taxa": 9 },
+      { "nome": "Vila Mariana", "taxa": 8 },
+      { "nome": "Outros bairros", "taxa": 12 }
+    ],
+    "pagamentos": ["Dinheiro", "Pix", "Cartão de crédito", "Cartão de débito"]
+  }
+]

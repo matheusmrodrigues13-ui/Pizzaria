@@ -1,0 +1,29 @@
+{
+  "name": "Mesa",
+  "type": "object",
+  "properties": {
+    "numero": {
+      "type": "number",
+      "title": "N\u00famero da mesa"
+    },
+    "capacidade": {
+      "type": "number",
+      "title": "Capacidade"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "disponivel",
+        "reservada",
+        "ocupada",
+        "limpeza"
+      ],
+      "default": "disponivel",
+      "title": "Status"
+    }
+  },
+  "required": [
+    "numero",
+    "capacidade"
+  ]
+}

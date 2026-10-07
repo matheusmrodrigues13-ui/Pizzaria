@@ -1,0 +1,46 @@
+{
+  "name": "Reserva",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "string",
+      "format": "date",
+      "title": "Data"
+    },
+    "horario": {
+      "type": "string",
+      "title": "Hor\u00e1rio"
+    },
+    "pessoas": {
+      "type": "number",
+      "title": "N\u00famero de pessoas"
+    },
+    "mesa_numero": {
+      "type": "number",
+      "title": "N\u00famero da mesa"
+    },
+    "cliente_nome": {
+      "type": "string",
+      "title": "Nome do cliente"
+    },
+    "cliente_telefone": {
+      "type": "string",
+      "title": "Telefone"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pendente",
+        "confirmada",
+        "cancelada"
+      ],
+      "default": "pendente",
+      "title": "Status"
+    }
+  },
+  "required": [
+    "data",
+    "horario",
+    "cliente_nome"
+  ]
+}

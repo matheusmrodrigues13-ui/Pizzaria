@@ -1,0 +1,5 @@
+[
+  { "id": 1, "titulo": "Pizza + Bebida", "descricao": "Pizza média + bebida lata por R$ 49. Peça no cardápio.", "ativa": true },
+  { "id": 2, "titulo": "Combo Casal", "descricao": "2 pizzas grandes + refrigerante 2L por R$ 119. Válido todos os dias.", "ativa": true },
+  { "id": 3, "titulo": "Terça da Pizza", "descricao": "Toda terça, pizza grande pelo preço da média. Não acumula com outras promoções.", "ativa": true }
+]
